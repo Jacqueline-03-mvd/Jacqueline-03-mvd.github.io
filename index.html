@@ -5,61 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacqueline Barolín</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Mi perfil</a></li>
-                <li><a href="#">Mi trabajo</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="50" height="50" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Mi perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mi trabajo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
     </header>
 
     <section class="inicio">
-        <div class="inicio2">
-            <h1>Hola,<br> mi nombre es <br> <span id="nombre">Jacqueline <br> Barolín</span></h1>
-            <h2>Soy una apasionada diseñadora gráfica, diseñadora UI/UX <br>
-                y comunicadora con 5 años de experiencia en diversos sectores.<br>
-                A lo largo de mi carrera, he tenido el privilegio de trabajar <br>
-                en una variedad de proyectos que me han permitido desarrollar <br>
-                habilidades únicas y una perspectiva integral <br>
-                del diseño y la comunicación.</h2>
-        </div>
-
-        <div class="cuadros-container">
-            <div class="cuadro">
-                <h3>Diseño Gráfico</h3>
-                <p>Como diseñadora gráfica con 5 años de experiencia, he desarrollado una habilidad excepcional para crear piezas visuales impactantes y funcionales. Mi enfoque se centra en la combinación perfecta entre estética y comunicación efectiva, asegurándome de que cada diseño no solo sea visualmente atractivo, sino también capaz de transmitir el mensaje correcto. He trabajado en una amplia gama de proyectos, desde branding y diseño de logotipos hasta campañas publicitarias y material de marketing, siempre adaptándome a las necesidades específicas de cada cliente. Mi pasión por el diseño y mi compromiso con la excelencia se reflejan en cada detalle de mi trabajo.</p>
-            </div>
-            <div class="cuadro">
-                <h3>Diseño UI/UX</h3>
-                <p>Mi experiencia en diseño UI/UX me ha permitido transformar ideas complejas en interfaces intuitivas y atractivas. Con una sólida comprensión de los principios de usabilidad y la psicología del usuario, he creado experiencias digitales que no solo son visualmente agradables, sino también altamente funcionales. Desde la investigación y el diseño de wireframes hasta la creación de prototipos interactivos, mi objetivo es siempre mejorar la experiencia del usuario y facilitar la navegación. He trabajado en proyectos diversos, incluyendo aplicaciones móviles, sitios web y plataformas de software, adaptándome a las últimas tendencias y tecnologías para ofrecer soluciones innovadoras.</p>
-            </div>
-            <div class="cuadro">
-                <h3>Comunicación</h3>
-                <p>Como comunicadora, he desarrollado una capacidad única para conectar con las audiencias a través de diversos medios. Mi experiencia abarca desde la redacción de contenido y la gestión de redes sociales hasta la creación de estrategias de comunicación integrales. He trabajado en campañas de comunicación para una variedad de sectores, siempre enfocándome en entender las necesidades del público y transmitir mensajes claros y persuasivos. Mi habilidad para contar historias y mi enfoque estratégico me permiten crear contenido que no solo informa, sino que también inspira y motiva a la acción.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h1>Hola, mi nombre es <br> <span id="nombre">Jacqueline Barolín</span></h1>
+                    <h2 class="texto-descriptivo">Soy una apasionada diseñadora gráfica, 
+                        diseñadora UI/UX y comunicadora con 5 años de experiencia en diversos sectores.
+                        A lo largo de mi carrera, he tenido el privilegio de trabajar 
+                        en una variedad de proyectos que me han permitido desarrollar 
+                        habilidades únicas y una perspectiva integral 
+                        del diseño y la comunicación.</h2>
+                    <div class="contactar-btn my-4">
+                        <button class="btn contactar-btn">Contactar</button>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="contacto-container">
-            <button class="contactar-btn">Contactar</button>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Diseño Gráfico</h3>
+                        <p class="card-text">Como diseñadora gráfica con 5 años de experiencia, he desarrollado una habilidad excepcional para crear piezas visuales impactantes y funcionales. Mi enfoque se centra en la combinación perfecta entre estética y comunicación efectiva, asegurándome de que cada diseño no solo sea visualmente atractivo, sino también capaz de transmitir el mensaje correcto. He trabajado en una amplia gama de proyectos, desde branding y diseño de logotipos hasta campañas publicitarias y material de marketing, siempre adaptándome a las necesidades específicas de cada cliente. Mi pasión por el diseño y mi compromiso con la excelencia se reflejan en cada detalle de mi trabajo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Diseño UI/UX</h3>
+                        <p class="card-text">Mi experiencia en diseño UI/UX me ha permitido transformar ideas complejas en interfaces intuitivas y atractivas. Con una sólida comprensión de los principios de usabilidad y la psicología del usuario, he creado experiencias digitales que no solo son visualmente agradables, sino también altamente funcionales. Desde la investigación y el diseño de wireframes hasta la creación de prototipos interactivos, mi objetivo es siempre mejorar la experiencia del usuario y facilitar la navegación. He trabajado en proyectos diversos, incluyendo aplicaciones móviles, sitios web y plataformas de software, adaptándome a las últimas tendencias y tecnologías para ofrecer soluciones innovadoras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Comunicación</h3>
+                        <p class="card-text">Como comunicadora, he desarrollado una capacidad única para conectar con las audiencias a través de diversos medios. Mi experiencia abarca desde la redacción de contenido y la gestión de redes sociales hasta la creación de estrategias de comunicación integrales. He trabajado en campañas de comunicación para una variedad de sectores, siempre enfocándome en entender las necesidades del público y transmitir mensajes claros y persuasivos. Mi habilidad para contar historias y mi enfoque estratégico me permiten crear contenido que no solo informa, sino que también inspira y motiva a la acción.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-</section>
-    
-<footer class="footer">
-    <p>Explora mi portafolio y si te gusta lo que ves, ¡no dudes en ponerte en contacto conmigo!</p>
-    <p id="telefono">Número de contacto: 098688690 </p>
-</footer>
 
+</div>
+<div class="spacer"></div> <!-- Elemento para el espacio adicional -->
+</div>
+
+    <footer class="footer">
+        <p>Explora mi portafolio y si te gusta lo que ves, ¡no dudes en ponerte en contacto conmigo!</p>
+        <p id="telefono">Número de contacto: 098688690 </p>
+    </footer>
 </body>
 </html>
